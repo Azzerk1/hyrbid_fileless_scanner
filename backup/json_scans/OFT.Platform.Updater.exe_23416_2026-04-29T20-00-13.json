@@ -1,0 +1,259 @@
+{
+  "process": {
+    "name": "OFT.Platform.Updater.exe",
+    "pid": 23416,
+    "path": "C:\\Program Files (x86)\\ATAS Platform\\OFT.Platform.Updater.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 80,
+    "region_count": 1086
+  },
+  "modules": {
+    "total": 80,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 20,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 102,
+    "exec_protect_count": 20,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0xEE0000",
+        "size_kb": 8,
+        "protect": "RWX",
+        "entropy": 0.443,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1B5C0000",
+        "size_kb": 20,
+        "protect": "RWX",
+        "entropy": 2.553,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1B700000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 1.018,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF472B70000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.42,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF472B80000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.164,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF472B90000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.155,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF995E03000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 2.573,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF995E0D000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 4.742,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF995E1D000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 4.798,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF995E2B000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.689,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          852
+        ],
+        "before_hex": "000000000000a00f28a5d82951000000",
+        "after_hex": "000000000000a00f9c65252a51000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 395,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 1,
+    "stubs": [
+      {
+        "address": "0x7FF995F4DE1E",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "84 c0 0f 85 0f 05 00 00 83 fe 20 77 37 8d 7e ff"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 10,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 1,
+    "entries": [
+      {
+        "base": "0x1FC80000",
+        "size_kb": 5272,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\Microsoft.NET\\assembly\\GAC_64\\System.Web\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Web.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 2,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 1
+    },
+    "total_events": 7,
+    "event_sequence": [
+      "virtual_alloc",
+      "write_memory",
+      "create_thread"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 44.4,
+    "private_bytes_mb": 27.1,
+    "handle_count": 412,
+    "thread_count": 10,
+    "io_read_mb": 0.29,
+    "io_write_mb": 0.0
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 22,
+    "interesting_count": 1,
+    "interesting": [
+      {
+        "address": "0x1FC80000",
+        "trigger": "mapped module @ 0x1fc80000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "process": {
+    "name": "ONENOTE.EXE",
+    "pid": 37788,
+    "path": "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 187,
+    "region_count": 2910
+  },
+  "modules": {
+    "total": 187,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 129,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 576,
+    "exec_protect_count": 129,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x7DF42C101000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF42C111000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.406,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF42C121000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.635,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF42C131000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.411,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF42C141000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF42C151000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.735,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF976000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF976044000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.576,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF976084000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.659,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF9760C4000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.617,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          1456
+        ],
+        "before_hex": "000000000000a00f3c0cc3fa52000000",
+        "after_hex": "000000000000a00f9af110fb52000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 760,
+    "high_value_imports": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryAttributesFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "ZwOpenKey"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQuerySecurityObject"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 22,
+    "stubs": [
+      {
+        "address": "0x7FF976044DA2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 00 e8 ff 0f 05 d2 48 89 45 c0 48 8b 55 c0 48"
+      },
+      {
+        "address": "0x7FF97604D5F0",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 00 e8 f1 0f 05 d2 49 8b 85 18 02 00 00 48 89"
+      },
+      {
+        "address": "0x7FF97606D157",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 00 e8 4a 0f 05 d2 e8 85 99 0c d2 85 d2 74 05"
+      },
+      {
+        "address": "0x7FF97609C5F9",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "10 05 02 c5 0f 05 02 9c 08 00 00 bb 58 00 00 00"
+      },
+      {
+        "address": "0x7FF9760E5B62",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "45 20 e8 7f 0f 05 d2 85 d2 74 05 e9 02 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 1,
+    "hooks": [
+      {
+        "function": "NtProtectVirtualMemory",
+        "hook_type": "JMP rel32",
+        "bytes": "e9 65 30 1f 00 00 00 00"
+      }
+    ]
+  },
+  "threads": {
+    "total": 52,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 8,
+    "entries": [
+      {
+        "base": "0x2A6DEA60000",
+        "size_kb": 84,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\1033\\msointl30.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6DFBB0000",
+        "size_kb": 18592,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\MSO99LRES.DLL",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6DF0B0000",
+        "size_kb": 2232,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\Cultures\\OFFICE.ODF",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6DF400000",
+        "size_kb": 7828,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\MSO40UIRES.DLL",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6E0DE0000",
+        "size_kb": 81288,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\MSORES.DLL",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6E6790000",
+        "size_kb": 10432,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\Office16\\ONRES.DLL",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6E7510000",
+        "size_kb": 1852,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\1033\\MSOINTL.DLL",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x2A6F0B30000",
+        "size_kb": 5612,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\prm0009.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 852,
+        "owner_name": "lsass.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|DUP_HANDLE|QUERY_INFO|0x1000",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": false,
+        "suspend_resume": false,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 230.8,
+    "private_bytes_mb": 181.9,
+    "handle_count": 1836,
+    "thread_count": 52,
+    "io_read_mb": 24.18,
+    "io_write_mb": 3.1
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 29,
+    "interesting_count": 8,
+    "interesting": [
+      {
+        "address": "0x2A6DEA60000",
+        "trigger": "mapped module @ 0x2a6dea60000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6DFBB0000",
+        "trigger": "mapped module @ 0x2a6dfbb0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6DF0B0000",
+        "trigger": "mapped module @ 0x2a6df0b0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6DF400000",
+        "trigger": "mapped module @ 0x2a6df400000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6E0DE0000",
+        "trigger": "mapped module @ 0x2a6e0de0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6E6790000",
+        "trigger": "mapped module @ 0x2a6e6790000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6E7510000",
+        "trigger": "mapped module @ 0x2a6e7510000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x2A6F0B30000",
+        "trigger": "mapped module @ 0x2a6f0b30000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

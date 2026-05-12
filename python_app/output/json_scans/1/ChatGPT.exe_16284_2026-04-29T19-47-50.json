@@ -1,0 +1,260 @@
+{
+  "process": {
+    "name": "ChatGPT.exe",
+    "pid": 16284,
+    "path": "C:\\Program Files\\WindowsApps\\OpenAI.ChatGPT-Desktop_1.2026.43.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 132,
+    "region_count": 2703
+  },
+  "modules": {
+    "total": 132,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 8,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 725,
+    "exec_protect_count": 8,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x18CFFF60000",
+        "size_kb": 32,
+        "protect": "RX",
+        "entropy": 4.263,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x793685760000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.088,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x793685770000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.085,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x793685771000",
+        "size_kb": 108,
+        "protect": "RWX",
+        "entropy": 4.584,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x793685790000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7936857AE000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 2.276,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7A7840000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7A7880000",
+        "size_kb": 2304,
+        "protect": "RWX",
+        "entropy": 5.497,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          16984
+        ],
+        "before_hex": "000000000000a00feb55016f4f000000",
+        "after_hex": "000000000000a00f3e144f6f4f000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 664,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "chatgpt.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtWriteFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtCreateFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 4,
+    "stubs": [
+      {
+        "address": "0x79368577ABBC",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "00 46 8b 4c 0f 34 45 85 c9 74 e1 8b 5e 07 49 0b"
+      },
+      {
+        "address": "0x7FF7A78E9DD6",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "00 02 03 5d 0f 34 9f 14 00 00 86 0f 35 a3 14 00"
+      },
+      {
+        "address": "0x7FF7A79D2AC1",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "83 c1 04 e9 0f 05 00 00 0f b6 54 3e 07 8d 42 d0"
+      },
+      {
+        "address": "0x7FF7A7A16000",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "69 0e 2a ee 0f 05 1c 00 9a 0e 00 00 00 05 1c 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 54,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 2,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 12,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 14,
+    "event_sequence": [
+      "virtual_alloc",
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 147.1,
+    "private_bytes_mb": 151.2,
+    "handle_count": 1618,
+    "thread_count": 54,
+    "io_read_mb": 112.54,
+    "io_write_mb": 115.9
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 9,
+    "interesting_count": 2,
+    "interesting": [
+      {
+        "address": "0x793685771000",
+        "trigger": "virtualalloc: exec protect",
+        "flags": [
+          "CALL/JMP - possible shellcode trampoline"
+        ],
+        "first_32B": "e9fb0c0000cccccce9fd0c0000cccccce96b670000cccccce9a30e0000cccccc"
+      },
+      {
+        "address": "0x793685790000",
+        "trigger": "virtualalloc: exec protect",
+        "flags": [
+          "NOP - possible NOP sled"
+        ],
+        "first_32B": "900a7fcf8c0100000100000009040205040301501800000048b8400c1549f77f"
+      }
+    ]
+  }
+}

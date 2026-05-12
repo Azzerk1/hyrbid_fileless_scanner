@@ -1,0 +1,377 @@
+{
+  "process": {
+    "name": "asus_framework.exe",
+    "pid": 8848,
+    "path": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\asus_framework.exe",
+    "integrity": "high",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege"
+    ],
+    "module_count": 97,
+    "region_count": 1729
+  },
+  "modules": {
+    "total": 97,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 5,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 400,
+    "exec_protect_count": 5,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x26084000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.505,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x2C504000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.447,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x32684000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.242,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x34D04000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 6.447,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x39E04000",
+        "size_kb": 236,
+        "protect": "RWX",
+        "entropy": 5.102,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f13cd83da4e000000",
+        "after_hex": "000000000000a00f1fc8d0da4e000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 957,
+    "high_value_imports": [
+      {
+        "module": "wow64.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtCreateThreadEx"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtWriteVirtualMemory"
+      },
+      {
+        "module": "wow64cpu.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "win32u.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "asus_framework.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "asus_framework.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtRaiseException"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtContinueEx"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtTestAlert"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 1,
+    "stubs": [
+      {
+        "address": "0x326A5B6F",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "4d e4 0f 83 0f 05 00 00 8b 44 8a 07 3b 7d c4 0f"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 35,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 92,
+    "entries": [
+      {
+        "base": "0x61FE0000",
+        "size_kb": 460,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\WindowManagementAPI.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x773D0000",
+        "size_kb": 1680,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\ntdll.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x76A60000",
+        "size_kb": 504,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\clbcatq.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x61EF0000",
+        "size_kb": 948,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\InputHost.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x73810000",
+        "size_kb": 2116,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\WinSxS\\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.6456_none_a865dda286726b5c\\comctl32.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x710F0000",
+        "size_kb": 152,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\cryptnet.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x61BF0000",
+        "size_kb": 588,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\mscms.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x74700000",
+        "size_kb": 272,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\powrprof.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x6E820000",
+        "size_kb": 32,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\winnsi.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x6B650000",
+        "size_kb": 124,
+        "path": "\\Device\\HarddiskVolume1\\Program Files (x86)\\ASUS\\ArmouryDevice\\resources\\app.asar.unpacked\\node_modules\\ac_node_addon\\build\\Release\\UnifyDeviceDetector.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 25.0,
+    "private_bytes_mb": 79.7,
+    "handle_count": 890,
+    "thread_count": 35,
+    "io_read_mb": 4.04,
+    "io_write_mb": 0.8
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 98,
+    "interesting_count": 92,
+    "interesting": [
+      {
+        "address": "0x61FE0000",
+        "trigger": "mapped module @ 0x61fe0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x773D0000",
+        "trigger": "mapped module @ 0x773d0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x76A60000",
+        "trigger": "mapped module @ 0x76a60000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x61EF0000",
+        "trigger": "mapped module @ 0x61ef0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x73810000",
+        "trigger": "mapped module @ 0x73810000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x710F0000",
+        "trigger": "mapped module @ 0x710f0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x61BF0000",
+        "trigger": "mapped module @ 0x61bf0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x74700000",
+        "trigger": "mapped module @ 0x74700000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

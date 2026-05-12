@@ -1,0 +1,332 @@
+{
+  "process": {
+    "name": "VirtualBoxVM.exe",
+    "pid": 19284,
+    "path": "E:\\Program Files\\Oracle\\VirtualBoxVM.exe",
+    "integrity": "high",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeBackupPrivilege",
+      "SeRestorePrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege"
+    ],
+    "module_count": 123,
+    "region_count": 2306
+  },
+  "modules": {
+    "total": 123,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 12,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 2,
+    "top_high_entropy_exec": [
+      {
+        "base": "0x197E74E0000",
+        "size_kb": 56,
+        "entropy": 7.177,
+        "label": "high",
+        "protect": "RWX",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E74F0000",
+        "size_kb": 56,
+        "entropy": 7.177,
+        "label": "high",
+        "protect": "RWX",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "virtual_allocs": {
+    "total_private_committed": 614,
+    "exec_protect_count": 12,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x19561710000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 0.03,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1956CFF0000",
+        "size_kb": 640,
+        "protect": "RWX",
+        "entropy": 1.805,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1956D0A0000",
+        "size_kb": 1024,
+        "protect": "RWX",
+        "entropy": 6.049,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1956DFA0000",
+        "size_kb": 3667968,
+        "protect": "RWX",
+        "entropy": 4.018,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1964F720000",
+        "size_kb": 6681600,
+        "protect": "RWX",
+        "entropy": 0.0,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E7450000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 1.383,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E7480000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 5.727,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E74B0000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 5.727,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E74E0000",
+        "size_kb": 56,
+        "protect": "RWX",
+        "entropy": 7.177,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x197E74F0000",
+        "size_kb": 56,
+        "protect": "RWX",
+        "entropy": 7.177,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 30,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00fda321a1d50000000",
+        "after_hex": "000000000000a00f67c0751d50000000"
+      },
+      {
+        "base": "0x195683E6000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "987b7461950100000000576195010000",
+        "after_hex": "987b7461950100000000576195010000"
+      },
+      {
+        "base": "0x19568EE6000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d82074619501000000c0bf6695010000",
+        "after_hex": "d82074619501000000c0bf6695010000"
+      },
+      {
+        "base": "0x1956CE10000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "010001000000000000cfbb3d01f8ffff",
+        "after_hex": "0100010003000000e087143401d8ffff"
+      },
+      {
+        "base": "0x19569895000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "18187461950100000080cd6895010000",
+        "after_hex": "18187461950100000080cd6895010000"
+      },
+      {
+        "base": "0x1956182E000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "181374619501000000600f6995010000",
+        "after_hex": "181374619501000000600f6995010000"
+      },
+      {
+        "base": "0x19561850000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "980b7461950100000060866195010000",
+        "after_hex": "00708861950100000060866195010000"
+      },
+      {
+        "base": "0x19561887000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0090836195010000980b746195010000",
+        "after_hex": "980b7461950100000000856195010000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 560,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "vboxsuplib.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "wintrust.dll",
+        "function": "NtQuerySecurityAttributesToken"
+      },
+      {
+        "module": "wintrust.dll",
+        "function": "NtQueryEaFile"
+      },
+      {
+        "module": "wintrust.dll",
+        "function": "NtQuerySecurityObject"
+      },
+      {
+        "module": "wintrust.dll",
+        "function": "ZwQueryVolumeInformationFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 253374,
+    "stubs": [
+      {
+        "address": "0x1956D028410",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "fe fd 08 1f 0f 34 57 3f 23 03 44 36 63 4b 2d 14"
+      },
+      {
+        "address": "0x1956D03B6C3",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "6c ae ad 4c 0f 05 7d 60 97 f2 0e 6b ac 85 07 1f"
+      },
+      {
+        "address": "0x1956D03C1B3",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "c8 7a 9b ef 0f 34 27 81 19 bd 54 27 52 c9 53 3d"
+      },
+      {
+        "address": "0x1956D040642",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "30 c6 02 ee 0f 05 4c 05 4f 7d 18 97 b6 29 c2 e5"
+      },
+      {
+        "address": "0x1956D042FF3",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "58 33 a2 b1 0f 34 34 b4 18 46 db 97 db 52 4b 5b"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 40,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 47,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 47,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 31.82,
+    "working_set_mb": 10138.3,
+    "private_bytes_mb": 10386.3,
+    "handle_count": 1315,
+    "thread_count": 40,
+    "io_read_mb": 22805.6,
+    "io_write_mb": 69223.06
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 42,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

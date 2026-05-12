@@ -1,0 +1,226 @@
+{
+  "process": {
+    "name": "lghub.exe",
+    "pid": 20048,
+    "path": "C:\\Program Files\\LGHUB\\lghub.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [],
+    "module_count": 41,
+    "region_count": 1271
+  },
+  "modules": {
+    "total": 41,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 5,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 380,
+    "exec_protect_count": 5,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1DDA33C9000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.582,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF6E0000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF6E0040000",
+        "size_kb": 2048,
+        "protect": "RWX",
+        "entropy": 5.675,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16330000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.138,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16FA0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          19472
+        ],
+        "before_hex": "000000000000a00f1d5950b750000000",
+        "after_hex": "000000000000a00f3aa29db750000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 275,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "lghub.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "lghub.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "lghub.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "lghub.exe",
+        "function": "NtWriteFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtCreateFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 32,
+    "stubs": [
+      {
+        "address": "0x1DDA33C9432",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1DDA33C9435",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1DDA33C9472",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1DDA33C9475",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1DDA33C94B2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 17,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 20232,
+        "owner_name": "lghub.exe",
+        "rights": "ALL_ACCESS",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": true
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 115.3,
+    "private_bytes_mb": 60.7,
+    "handle_count": 359,
+    "thread_count": 17,
+    "io_read_mb": 28.56,
+    "io_write_mb": 8.69
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 6,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

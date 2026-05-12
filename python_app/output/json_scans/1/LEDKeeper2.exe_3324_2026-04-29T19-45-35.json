@@ -1,0 +1,445 @@
+{
+  "process": {
+    "name": "LEDKeeper2.exe",
+    "pid": 3324,
+    "path": "C:\\Program Files (x86)\\MSI\\MSI Center\\Mystic Light\\LEDKeeper2.exe",
+    "integrity": "high",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeBackupPrivilege",
+      "SeRestorePrivilege",
+      "SeDebugPrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege"
+    ],
+    "module_count": 157,
+    "region_count": 2198
+  },
+  "modules": {
+    "total": 157,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 29,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 349,
+    "exec_protect_count": 29,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x27A3000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 2.342,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27AD000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 4.788,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27BD000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 3.289,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27C6000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 2.044,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27CA000",
+        "size_kb": 16,
+        "protect": "RWX",
+        "entropy": 5.581,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27D5000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.39,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27D7000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 2.98,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x27DB000",
+        "size_kb": 8,
+        "protect": "RWX",
+        "entropy": 5.514,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x2840000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 6.031,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x28E0000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 6.562,
+        "entropy_label": "high",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f74b33a1e4f000000",
+        "after_hex": "000000000000a00ff7c1871e4f000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 1059,
+    "high_value_imports": [
+      {
+        "module": "wow64.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtCreateThreadEx"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtWriteVirtualMemory"
+      },
+      {
+        "module": "wow64cpu.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "win32u.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "wow64.dll",
+        "function": "NtRaiseException"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtContinueEx"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtTestAlert"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtQuerySystemInformation"
+      },
+      {
+        "module": "wow64.dll",
+        "function": "NtQuerySection"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 5,
+    "stubs": [
+      {
+        "address": "0x27C744D",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "00 81 39 cc 0f 34 6e 0f 85 eb 37 00 00 e9 15 b4"
+      },
+      {
+        "address": "0x284F22F",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RWX",
+        "context_bytes": "3a a6 03 e8 cd 2e 6d 71 8b 05 30 24 a6 03 8d 15"
+      },
+      {
+        "address": "0x5815BDF",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "8b cb e8 de 0f 05 6d 8d 7b 28 8d 75 08 f3 0f 7e"
+      },
+      {
+        "address": "0x8A06BFE",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "ae 6c 0f 84 0f 05 00 00 90 e9 a3 29 00 00 81 7d"
+      },
+      {
+        "address": "0x8A249F1",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "39 09 e8 a4 0f 34 00 89 85 68 ff ff ff 8b 8d 68"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 26,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 168,
+    "entries": [
+      {
+        "base": "0x773D0000",
+        "size_kb": 1680,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\ntdll.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x76A60000",
+        "size_kb": 504,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\clbcatq.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x61EF0000",
+        "size_kb": 948,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\InputHost.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x4FA0000",
+        "size_kb": 380,
+        "path": "\\Device\\HarddiskVolume1\\Program Files (x86)\\MSI\\MSI Center\\Mystic Light\\SyncData.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x63160000",
+        "size_kb": 112,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\dxva2.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x773A0000",
+        "size_kb": 100,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\bcrypt.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x5500000",
+        "size_kb": 512,
+        "path": "\\Device\\HarddiskVolume1\\Program Files (x86)\\MSI\\MSI Center\\Mystic Light\\NAudio.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x5400000",
+        "size_kb": 392,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\Microsoft.NET\\assembly\\GAC_MSIL\\System.Management\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Management.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x5470000",
+        "size_kb": 28,
+        "path": "\\Device\\HarddiskVolume1\\Program Files (x86)\\MSI\\MSI Center\\Mystic Light\\API_PSUMonitor.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x64280000",
+        "size_kb": 168,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\SysWOW64\\RTWorkQ.dll",
+        "has_mz": true,
+        "missing_win32": false,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 20.6,
+    "private_bytes_mb": 64.5,
+    "handle_count": 941,
+    "thread_count": 26,
+    "io_read_mb": 5.81,
+    "io_write_mb": 0.01
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 189,
+    "interesting_count": 168,
+    "interesting": [
+      {
+        "address": "0x773D0000",
+        "trigger": "mapped module @ 0x773d0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x76A60000",
+        "trigger": "mapped module @ 0x76a60000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x61EF0000",
+        "trigger": "mapped module @ 0x61ef0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x4FA0000",
+        "trigger": "mapped module @ 0x4fa0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x63160000",
+        "trigger": "mapped module @ 0x63160000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x773A0000",
+        "trigger": "mapped module @ 0x773a0000: !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x5500000",
+        "trigger": "mapped module @ 0x5500000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x5400000",
+        "trigger": "mapped module @ 0x5400000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

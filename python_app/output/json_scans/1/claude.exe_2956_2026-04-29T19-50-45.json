@@ -1,0 +1,253 @@
+{
+  "process": {
+    "name": "claude.exe",
+    "pid": 2956,
+    "path": "C:\\Program Files\\WindowsApps\\Claude_1.5354.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 143,
+    "region_count": 3563
+  },
+  "modules": {
+    "total": 143,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 4,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 1056,
+    "exec_protect_count": 4,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x7C57923E0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7C57923E1000",
+        "size_kb": 16,
+        "protect": "RWX",
+        "entropy": 5.101,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7E0000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7E0040000",
+        "size_kb": 9216,
+        "protect": "RWX",
+        "entropy": 5.69,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 4,
+    "with_confirmed_writer_pid": 4,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          5980
+        ],
+        "before_hex": "000000000000a00f3ea93fd74f000000",
+        "after_hex": "000000000000a00f44f08dd74f000000"
+      },
+      {
+        "base": "0x43F400338000",
+        "protect": "RW",
+        "writer_pids": [
+          5980
+        ],
+        "before_hex": "09430201fa01000015460201fa010000",
+        "after_hex": "09430201fa01000015460201fa010000"
+      },
+      {
+        "base": "0x43F40321C000",
+        "protect": "RW",
+        "writer_pids": [
+          5980
+        ],
+        "before_hex": "e967a9aef77f0000a667a9aef77f0000",
+        "after_hex": "4cc2d8aef77f000022c2d8aef77f0000"
+      },
+      {
+        "base": "0x43F000218000",
+        "protect": "RW",
+        "writer_pids": [
+          5980
+        ],
+        "before_hex": "808100000000000000000000f4430000",
+        "after_hex": "008200000000000000000000f4430000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 741,
+    "high_value_imports": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "claude.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "claude.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "claude.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "claude.exe",
+        "function": "NtQuerySystemInformation"
+      },
+      {
+        "module": "claude.exe",
+        "function": "NtWriteFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 63,
+    "stubs": [
+      {
+        "address": "0x7FF7E00BC93E",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "f8 41 8b 80 0f 05 00 00 49 03 c6 48 89 45 b8 48"
+      },
+      {
+        "address": "0x7FF7E0144B37",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "7d f8 89 8f 0f 05 00 00 81 f9 00 00 00 01 0f 82"
+      },
+      {
+        "address": "0x7FF7E0144B53",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 4c 8d 87 0f 05 00 00 48 81 e1 00 00 fc ff f6"
+      },
+      {
+        "address": "0x7FF7E014CD3C",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "03 de 8b 9b 0f 05 00 00 49 03 de 48 b8 59 cc d3"
+      },
+      {
+        "address": "0x7FF7E0185797",
+        "opcode": "SYSENTER (0F 34)",
+        "protect": "RWX",
+        "context_bytes": "7d f8 89 8f 0f 34 00 00 81 f9 00 00 00 01 0f 82"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 60,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 1,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 13,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 14,
+    "event_sequence": [
+      "virtual_alloc",
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.2,
+    "working_set_mb": 235.6,
+    "private_bytes_mb": 274.4,
+    "handle_count": 1746,
+    "thread_count": 60,
+    "io_read_mb": 19404.76,
+    "io_write_mb": 43738.05
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 8,
+    "interesting_count": 1,
+    "interesting": [
+      {
+        "address": "0x7C57923E1000",
+        "trigger": "virtualalloc: exec protect",
+        "flags": [
+          "CALL/JMP - possible shellcode trampoline"
+        ],
+        "first_32B": "e97b380000cccccce93d0a0000cccccce9ab0a0000cccccce9410a0000cccccc"
+      }
+    ]
+  }
+}

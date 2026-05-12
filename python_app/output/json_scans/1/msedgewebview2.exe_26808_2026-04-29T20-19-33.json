@@ -1,0 +1,242 @@
+{
+  "process": {
+    "name": "msedgewebview2.exe",
+    "pid": 26808,
+    "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\147.0.3912.86\\msedgewebview2.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 68,
+    "region_count": 2010
+  },
+  "modules": {
+    "total": 68,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 2,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 593,
+    "exec_protect_count": 2,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x2760416A000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.37,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA17960000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.242,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 17,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f0b5b69dd53000000",
+        "after_hex": "000000000000a00f62f2b6dd53000000"
+      },
+      {
+        "base": "0x2764FA24000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d80c1704760200000070495076020000",
+        "after_hex": "d80c1704760200000070495076020000"
+      },
+      {
+        "base": "0x6DDC00368000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0000000000369000ffffffffffc96fff",
+        "after_hex": "0000000000368b00ffffffffffc974ff"
+      },
+      {
+        "base": "0x2764CE24000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "580a1704760200000020280476020000",
+        "after_hex": "580a1704760200000020280476020000"
+      },
+      {
+        "base": "0x2764CF29000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0030344d760200000040655076020000",
+        "after_hex": "0030344d760200001809170476020000"
+      },
+      {
+        "base": "0x27649145000",
+        "protect": "RW+WC",
+        "writer_pids": [],
+        "before_hex": "9080042000000000c0010100931eae00",
+        "after_hex": "9080042000000000c00101004626ae00"
+      },
+      {
+        "base": "0x276494A0000",
+        "protect": "RW+WC",
+        "writer_pids": [],
+        "before_hex": "5104008056000520a71eae0000000000",
+        "after_hex": "51040080560005202026ae0000000000"
+      },
+      {
+        "base": "0x27650396000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d82f17047602000000b01c4d76020000",
+        "after_hex": "d82f17047602000000b01c4d76020000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 389,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "msedgewebview2.exe",
+        "function": "NtQueryInformationProcess"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtClose"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtCreateKey"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtDeleteValueKey"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 38,
+    "stubs": [
+      {
+        "address": "0x2760416A832",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x2760416A835",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 4c"
+      },
+      {
+        "address": "0x2760416A872",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x2760416A875",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 4c"
+      },
+      {
+        "address": "0x2760416A8B2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 38,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 74,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 74,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 12.49,
+    "working_set_mb": 100.0,
+    "private_bytes_mb": 212.8,
+    "handle_count": 651,
+    "thread_count": 38,
+    "io_read_mb": 3651.35,
+    "io_write_mb": 91.83
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 19,
+    "interesting_count": 1,
+    "interesting": [
+      {
+        "address": "0x27649145000",
+        "trigger": "write-detect change @ 0x27649145000 writers=unknown writer",
+        "flags": [
+          "NOP - possible NOP sled"
+        ],
+        "first_32B": "9080042000000000c00101004781ae0000000000c08001200c0000081ee00080"
+      }
+    ]
+  }
+}

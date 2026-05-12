@@ -1,0 +1,278 @@
+{
+  "process": {
+    "name": "Skype.exe",
+    "pid": 40516,
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_15.150.3125.0_x64__kzf8qxf38zg5c\\Skype\\Skype.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 63,
+    "region_count": 1465
+  },
+  "modules": {
+    "total": 63,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 13,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 386,
+    "exec_protect_count": 13,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x444619630000",
+        "size_kb": 12,
+        "protect": "RX",
+        "entropy": 0.086,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF727FF0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.087,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728004000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 3.846,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728044000",
+        "size_kb": 24,
+        "protect": "RX",
+        "entropy": 1.595,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728084000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.448,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7280C4000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.47,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728104000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.636,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728144000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.754,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF728184000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.793,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7281C4000",
+        "size_kb": 236,
+        "protect": "RX",
+        "entropy": 5.55,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          38644,
+          20632
+        ],
+        "before_hex": "000000000000a00f1d81e78d53000000",
+        "after_hex": "000000000000a00f51f1348e53000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 395,
+    "high_value_imports": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryAttributesFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "ZwOpenKey"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQuerySecurityObject"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 15,
+    "stubs": [
+      {
+        "address": "0x7FF72802CE64",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "d2 01 00 20 0f 05 00 00 00 00 00 00 14 00 00 00"
+      },
+      {
+        "address": "0x7FF7280F18BF",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "00 00 00 e8 0f 05 00 00 e9 87 fc ff ff 48 8b 45"
+      },
+      {
+        "address": "0x7FF7281988AD",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "03 00 00 e8 0f 05 cf 07 48 8b 55 d0 33 db e8 04"
+      },
+      {
+        "address": "0x7FF7281A0A72",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "45 c8 bb 02 0f 05 00 ff 75 c0 41 ff b5 30 01 00"
+      },
+      {
+        "address": "0x7FF7281CBB58",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "f8 41 8b 80 0f 05 00 00 49 03 c6 48 89 45 c8 48"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 20,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 2,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 38644,
+        "owner_name": "Skype.exe",
+        "rights": "ALL_ACCESS",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": true
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 143.4,
+    "private_bytes_mb": 107.9,
+    "handle_count": 389,
+    "thread_count": 20,
+    "io_read_mb": 21.99,
+    "io_write_mb": 7.24
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 14,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

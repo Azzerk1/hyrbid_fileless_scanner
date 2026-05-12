@@ -1,0 +1,149 @@
+{
+  "num_modules": {
+    "mean": 74.67217,
+    "std": 62.064016,
+    "min": 0.0,
+    "max": 498.0,
+    "count": 424
+  },
+  "num_memory_regions": {
+    "mean": 1316.391509,
+    "std": 1226.813176,
+    "min": 0.0,
+    "max": 13414.0,
+    "count": 424
+  },
+  "num_private_regions": {
+    "mean": 283.136792,
+    "std": 365.295848,
+    "min": 0.0,
+    "max": 2900.0,
+    "count": 424
+  },
+  "num_executable_regions": {
+    "mean": 4.46934,
+    "std": 15.483375,
+    "min": 0.0,
+    "max": 129.0,
+    "count": 424
+  },
+  "num_rw_regions": {
+    "mean": 278.667453,
+    "std": 361.5793,
+    "min": 0.0,
+    "max": 2863.0,
+    "count": 424
+  },
+  "num_rx_regions": {
+    "mean": 4.46934,
+    "std": 15.483375,
+    "min": 0.0,
+    "max": 129.0,
+    "count": 424
+  },
+  "num_threads": {
+    "mean": 19.117925,
+    "std": 21.852103,
+    "min": 0.0,
+    "max": 144.0,
+    "count": 424
+  },
+  "num_handles": {
+    "mean": 580.145933,
+    "std": 590.0228,
+    "min": 0.0,
+    "max": 4792.0,
+    "count": 418
+  },
+  "cpu_usage": {
+    "mean": 0.2391,
+    "std": 1.943503,
+    "min": 0.0,
+    "max": 31.82,
+    "count": 418
+  },
+  "working_set_mb": {
+    "mean": 90.139402,
+    "std": 500.035642,
+    "min": 0.09,
+    "max": 10138.3,
+    "count": 418
+  },
+  "private_bytes_mb": {
+    "mean": 89.635096,
+    "std": 523.833825,
+    "min": 0.14,
+    "max": 10386.34,
+    "count": 418
+  },
+  "io_read_mb": {
+    "mean": 447.504647,
+    "std": 3800.897925,
+    "min": 0.0,
+    "max": 58733.5536,
+    "count": 418
+  },
+  "io_write_kb": {
+    "mean": 1366604.679472,
+    "std": 20690325.699959,
+    "min": 0.0,
+    "max": 414972222.976,
+    "count": 418
+  },
+  "entropy_mean": {
+    "mean": 1.861337,
+    "std": 1.392422,
+    "min": 0.029,
+    "max": 5.5485,
+    "count": 177
+  },
+  "entropy_max": {
+    "mean": 3.6121,
+    "std": 2.273042,
+    "min": 0.029,
+    "max": 7.1775,
+    "count": 177
+  },
+  "has_mz_header": {
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "count": 424
+  },
+  "has_pe_header": {
+    "mean": 0.011792,
+    "std": 0.107951,
+    "min": 0.0,
+    "max": 1.0,
+    "count": 424
+  },
+  "cross_process_writes_count": {
+    "mean": 2.445755,
+    "std": 5.724153,
+    "min": 0.0,
+    "max": 67.0,
+    "count": 424
+  },
+  "api_writeprocessmemory_count": {
+    "mean": 6.698113,
+    "std": 11.033542,
+    "min": 0.0,
+    "max": 96.0,
+    "count": 424
+  },
+  "api_createremotethread_count": {
+    "mean": 0.011792,
+    "std": 0.145215,
+    "min": 0.0,
+    "max": 2.0,
+    "count": 424
+  },
+  "ntqueueapc_present": {
+    "mean": 0.978774,
+    "std": 0.144138,
+    "min": 0.0,
+    "max": 1.0,
+    "count": 424
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "process": {
+    "name": "3DViewer.exe",
+    "pid": 26320,
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Microsoft3DViewer_7.2602.8012.0_x64__8wekyb3d8bbwe\\3DViewer.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 159,
+    "region_count": 2504
+  },
+  "modules": {
+    "total": 159,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 0,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 616,
+    "exec_protect_count": 0,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": []
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 34,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00fb68df0a251000000",
+        "after_hex": "000000000000a00f995f3ea351000000"
+      },
+      {
+        "base": "0x1F2AA023000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00200054f201000000d0aa9df2010000",
+        "after_hex": "00508c52f201000000d0aa9df2010000"
+      },
+      {
+        "base": "0x1F2A9F78000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0060fe52f201000000c045a4f2010000",
+        "after_hex": "00c045a4f20100000060fe52f2010000"
+      },
+      {
+        "base": "0x1F2969E0000",
+        "protect": "RW+WC",
+        "writer_pids": [],
+        "before_hex": "9080042000000000000d01002ac42c01",
+        "after_hex": "9080042000000000000d010082d32c01"
+      },
+      {
+        "base": "0x1F2A9FA5000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d8708836f2010000d8708836f2010000",
+        "after_hex": "d8708836f2010000d8708836f2010000"
+      },
+      {
+        "base": "0x1F2A43DE000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "003074a3f20100000080fe52f2010000",
+        "after_hex": "003074a3f201000000d08f52f2010000"
+      },
+      {
+        "base": "0x1F236AF0000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00401f52f2010000580f8836f2010000",
+        "after_hex": "00e0ec53f201000000401f52f2010000"
+      },
+      {
+        "base": "0x1F2AA0A0000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00e0cb9df201000000d05da3f2010000",
+        "after_hex": "00e0cb9df201000000d05da3f2010000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 633,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 42,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 8,
+    "entries": [
+      {
+        "base": "0x1F2526A0000",
+        "size_kb": 700,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Resources.19h1.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F253CB0000",
+        "size_kb": 1268,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Phone.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F254200000",
+        "size_kb": 1352,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Maps.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F29DE50000",
+        "size_kb": 52,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Resources.Common.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F254560000",
+        "size_kb": 804,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.ApplicationModel.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F254360000",
+        "size_kb": 972,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.InkControls.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F29C8B0000",
+        "size_kb": 3952,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Controls.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1F29DF00000",
+        "size_kb": 156,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.System.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 3,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 852,
+        "owner_name": "lsass.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|DUP_HANDLE|QUERY_INFO|0x1000",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": false,
+        "suspend_resume": false,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 77,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 77,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 3.9,
+    "working_set_mb": 170.3,
+    "private_bytes_mb": 320.7,
+    "handle_count": 1121,
+    "thread_count": 42,
+    "io_read_mb": 156.41,
+    "io_write_mb": 19.3
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 42,
+    "interesting_count": 11,
+    "interesting": [
+      {
+        "address": "0x1F2526A0000",
+        "trigger": "mapped module @ 0x1f2526a0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F253CB0000",
+        "trigger": "mapped module @ 0x1f253cb0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F254200000",
+        "trigger": "mapped module @ 0x1f254200000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F29DE50000",
+        "trigger": "mapped module @ 0x1f29de50000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F254560000",
+        "trigger": "mapped module @ 0x1f254560000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F254360000",
+        "trigger": "mapped module @ 0x1f254360000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F29C8B0000",
+        "trigger": "mapped module @ 0x1f29c8b0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1F29DF00000",
+        "trigger": "mapped module @ 0x1f29df00000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      }
+    ]
+  }
+}

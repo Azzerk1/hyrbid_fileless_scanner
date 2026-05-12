@@ -1,0 +1,256 @@
+{
+  "process": {
+    "name": "ChatGPT.exe",
+    "pid": 8148,
+    "path": "C:\\Program Files\\WindowsApps\\OpenAI.ChatGPT-Desktop_1.2026.43.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [],
+    "module_count": 41,
+    "region_count": 2272
+  },
+  "modules": {
+    "total": 41,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 5,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 876,
+    "exec_protect_count": 5,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x2B56A24C000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.582,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7A7840000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF7A7880000",
+        "size_kb": 6912,
+        "protect": "RWX",
+        "entropy": 5.739,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16330000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.137,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16FA0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 5,
+    "with_confirmed_writer_pid": 5,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          16284,
+          16984
+        ],
+        "before_hex": "000000000000a00fbce4707250000000",
+        "after_hex": "000000000000a00f2ecabe7250000000"
+      },
+      {
+        "base": "0x5A5000210000",
+        "protect": "RW",
+        "writer_pids": [
+          16284,
+          16984
+        ],
+        "before_hex": "400600000000000000000000545a0000",
+        "after_hex": "100800000000000000000000545a0000"
+      },
+      {
+        "base": "0x5A5400448000",
+        "protect": "RW",
+        "writer_pids": [
+          16284,
+          16984
+        ],
+        "before_hex": "b95a8200bf020000b95a8200bf020000",
+        "after_hex": "b95a8200bf020000b95a8200bf020000"
+      },
+      {
+        "base": "0x5A540B0E0000",
+        "protect": "RW",
+        "writer_pids": [
+          16284,
+          16984
+        ],
+        "before_hex": "20135a4ef77f0000402d054ff77f0000",
+        "after_hex": "20135a4ef77f0000402d054ff77f0000"
+      },
+      {
+        "base": "0x5A5404E14000",
+        "protect": "RW",
+        "writer_pids": [
+          16284,
+          16984
+        ],
+        "before_hex": "00000000000000000000000000000000",
+        "after_hex": "00100900545a000000006c02bf020000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 275,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "chatgpt.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "chatgpt.exe",
+        "function": "NtWriteFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtCreateFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 45,
+    "stubs": [
+      {
+        "address": "0x2B56A24C832",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x2B56A24C835",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x2B56A24C872",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x2B56A24C875",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x2B56A24C8B2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 20,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 6,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 6,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 243.8,
+    "private_bytes_mb": 159.9,
+    "handle_count": 420,
+    "thread_count": 20,
+    "io_read_mb": 34.7,
+    "io_write_mb": 13.85
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 10,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

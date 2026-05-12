@@ -1,0 +1,226 @@
+{
+  "process": {
+    "name": "TradingView.exe",
+    "pid": 4972,
+    "path": "C:\\Program Files\\WindowsApps\\TradingView.Desktop_3.1.0.7818_x64__n534cwy3pjxzj\\TradingView.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 54,
+    "region_count": 1055
+  },
+  "modules": {
+    "total": 54,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 0,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 241,
+    "exec_protect_count": 0,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": []
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 8,
+    "with_confirmed_writer_pid": 8,
+    "events": [
+      {
+        "base": "0x2B9401258000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "000000000125a000fffffffffeda5fff",
+        "after_hex": "000000000125a000fffffffffeda5fff"
+      },
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "000000000000a00f9bb0eac752000000",
+        "after_hex": "000000000000a00f1e9837c852000000"
+      },
+      {
+        "base": "0x2C9D38B1000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "581461d3c9020000006083d3c9020000",
+        "after_hex": "581461d3c9020000006083d3c9020000"
+      },
+      {
+        "base": "0x2B9400D08000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "0000000000d08280ffffffffff2f7d7f",
+        "after_hex": "5802000000000000206f4783f67f0000"
+      },
+      {
+        "base": "0x2B94000A0000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "0000000000000000ffffffffffffffff",
+        "after_hex": "0000000000000000ffffffffffffffff"
+      },
+      {
+        "base": "0x2B9400220000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "0000000000000000ffffffffffffffff",
+        "after_hex": "0000000000000000ffffffffffffffff"
+      },
+      {
+        "base": "0x2B9401201000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "00f6f383f67f00000000000000000000",
+        "after_hex": "00f6f383f67f00000000000000000000"
+      },
+      {
+        "base": "0x2B9401214000",
+        "protect": "RW",
+        "writer_pids": [
+          1456,
+          3872
+        ],
+        "before_hex": "881e0000000000007090ff81f67f0000",
+        "after_hex": "0000000001216000fffffffffede9fff"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 342,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "tradingview.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtWriteFile"
+      },
+      {
+        "module": "oleaut32.dll",
+        "function": "NtQuerySystemInformationEx"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 18,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 4,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 14248,
+        "owner_name": "TradingView.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|CREATE_THREAD|SUSPEND_RESUME|DUP_HANDLE|QUERY_INFO|SET_INFO|0x3185",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 9,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 9,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 45.3,
+    "private_bytes_mb": 17.2,
+    "handle_count": 391,
+    "thread_count": 18,
+    "io_read_mb": 18.02,
+    "io_write_mb": 221.4
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 8,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

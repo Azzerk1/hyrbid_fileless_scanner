@@ -1,0 +1,160 @@
+{
+  "process": {
+    "name": "Adobe Spaces Helper.exe",
+    "pid": 25128,
+    "path": "G:\\Program FIles\\Photoshop\\Adobe Photoshop 2020\\Required\\Plug-ins\\Spaces\\Adobe Spaces Helper.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 68,
+    "region_count": 1112
+  },
+  "modules": {
+    "total": 68,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 2,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 278,
+    "exec_protect_count": 2,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x3CC931C82000",
+        "size_kb": 144,
+        "protect": "RX",
+        "entropy": 4.475,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x3CC931D02000",
+        "size_kb": 500,
+        "protect": "RX",
+        "entropy": 5.772,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f85c3b43e51000000",
+        "after_hex": "000000000000a00f03ab013f51000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 375,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "gdi32full.dll",
+        "function": "NtQueryInformationFile"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtUnmapViewOfSection"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtCreateSection"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtMapViewOfSection"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 1,
+    "stubs": [
+      {
+        "address": "0x3CC931CA0B7C",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "00 00 00 00 0f 05 00 00 49 ba a0 73 2f 96 f8 7f"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 16,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 4,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 52.0,
+    "private_bytes_mb": 28.5,
+    "handle_count": 282,
+    "thread_count": 16,
+    "io_read_mb": 0.49,
+    "io_write_mb": 0.11
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 3,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

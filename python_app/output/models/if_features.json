@@ -1,0 +1,23 @@
+[
+  "num_modules",
+  "num_memory_regions",
+  "num_private_regions",
+  "num_executable_regions",
+  "num_rw_regions",
+  "num_rx_regions",
+  "num_threads",
+  "num_handles",
+  "cpu_usage",
+  "working_set_mb",
+  "private_bytes_mb",
+  "io_read_mb",
+  "io_write_kb",
+  "entropy_mean",
+  "entropy_max",
+  "has_mz_header",
+  "has_pe_header",
+  "cross_process_writes_count",
+  "api_writeprocessmemory_count",
+  "api_createremotethread_count",
+  "ntqueueapc_present"
+]

@@ -1,0 +1,211 @@
+{
+  "process": {
+    "name": "CorsairCpuIdService.exe",
+    "pid": 6732,
+    "path": "E:\\Program Files\\Icue\\Corsair iCUE5 Software\\Corsair iCUE5 Software\\CorsairCpuIdService.exe",
+    "integrity": "system",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeLockMemoryPrivilege",
+      "SeTcbPrivilege",
+      "SeLoadDriverPrivilege",
+      "SeSystemProfilePrivilege",
+      "SeProfileSingleProcessPrivilege",
+      "SeIncreaseBasePriorityPrivilege",
+      "SeCreatePagefilePrivilege",
+      "SeCreatePermanentPrivilege",
+      "SeBackupPrivilege",
+      "SeRestorePrivilege",
+      "SeDebugPrivilege",
+      "SeAuditPrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege",
+      "SeIncreaseWorkingSetPrivilege",
+      "SeTimeZonePrivilege",
+      "SeCreateSymbolicLinkPrivilege",
+      "SeDelegateSessionUserImpersonatePrivilege"
+    ],
+    "module_count": 130,
+    "region_count": 2431
+  },
+  "modules": {
+    "total": 130,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 1,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 1370,
+    "exec_protect_count": 1,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x7FFA17880000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.809,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 10,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x19ACB9FC000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00000000000000000000000000000000",
+        "after_hex": "00000000000000000000000000000000"
+      },
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00fb393a79b4e000000",
+        "after_hex": "000000000000a00f42a2f49b4e000000"
+      },
+      {
+        "base": "0x19ACC178000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "300030003000300041ac321d4f4a7b10",
+        "after_hex": "300030003000300041ac321d4f4a7b10"
+      },
+      {
+        "base": "0x19AC5C60000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0000000000000000c0a6ccc59a010000",
+        "after_hex": "0000000000000000c0a6ccc59a010000"
+      },
+      {
+        "base": "0x19ACA3B2000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "7d000000050000000f00000000000000",
+        "after_hex": "7d000000050000000f00000000000000"
+      },
+      {
+        "base": "0x19AC8B46000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00402e000000000041ba320b4a4a2f20",
+        "after_hex": "00402e000000000041ba320b4a4a2f20"
+      },
+      {
+        "base": "0x19AC8E7C000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "000000000000000041ac321d4a4a6210",
+        "after_hex": "000000000000000041ac321d4a4a6210"
+      },
+      {
+        "base": "0x19ACA45B000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "2c0a000000000000418832394a4ac310",
+        "after_hex": "2c0a000000000000418832394a4ac310"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 623,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "shell32.dll",
+        "function": "NtQueryInformationFile"
+      },
+      {
+        "module": "shell32.dll",
+        "function": "NtCreateFile"
+      },
+      {
+        "module": "shell32.dll",
+        "function": "NtClose"
+      },
+      {
+        "module": "shell32.dll",
+        "function": "NtFsControlFile"
+      },
+      {
+        "module": "shell32.dll",
+        "function": "NtSetInformationFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 25,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 9,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 9,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 1.17,
+    "working_set_mb": 43.5,
+    "private_bytes_mb": 100.5,
+    "handle_count": 582,
+    "thread_count": 25,
+    "io_read_mb": 237.61,
+    "io_write_mb": 779.76
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 11,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

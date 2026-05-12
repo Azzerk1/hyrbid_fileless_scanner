@@ -1,0 +1,229 @@
+{
+  "process": {
+    "name": "steamwebhelper.exe",
+    "pid": 42584,
+    "path": "E:\\Program Files\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [],
+    "module_count": 64,
+    "region_count": 1129
+  },
+  "modules": {
+    "total": 64,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 6,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 239,
+    "exec_protect_count": 6,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1A29DB74000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.582,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1A29DFF0000",
+        "size_kb": 64,
+        "protect": "RX",
+        "entropy": 0.516,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF8E0000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16330000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.137,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16DC0000",
+        "size_kb": 20,
+        "protect": "RWX",
+        "entropy": 0.055,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16FA0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f200de57854000000",
+        "after_hex": "000000000000a00f98f4317954000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 380,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 31,
+    "stubs": [
+      {
+        "address": "0x1A29DB74832",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1A29DB74835",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1A29DB74872",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1A29DB74875",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1A29DB748B2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 20,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 26152,
+        "owner_name": "steamwebhelper.exe",
+        "rights": "ALL_ACCESS",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": true
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 45.8,
+    "private_bytes_mb": 21.6,
+    "handle_count": 497,
+    "thread_count": 20,
+    "io_read_mb": 0.15,
+    "io_write_mb": 0.16
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 7,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

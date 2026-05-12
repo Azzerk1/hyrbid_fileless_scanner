@@ -1,0 +1,317 @@
+{
+  "process": {
+    "name": "TradingView.exe",
+    "pid": 37644,
+    "path": "C:\\Program Files\\WindowsApps\\TradingView.Desktop_3.1.0.7818_x64__n534cwy3pjxzj\\TradingView.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [],
+    "module_count": 42,
+    "region_count": 2405
+  },
+  "modules": {
+    "total": 42,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 6,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 945,
+    "exec_protect_count": 6,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1F19A53B000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.582,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x509BD9100000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.088,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF6DC240000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF6DC280000",
+        "size_kb": 11008,
+        "protect": "RWX",
+        "entropy": 5.64,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16330000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.135,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFA16FA0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.083,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 29,
+    "with_confirmed_writer_pid": 29,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "000000000000a00f224c61f652000000",
+        "after_hex": "000000000000a00fa758aff652000000"
+      },
+      {
+        "base": "0x3C1C00764000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "0000000000000000ffffffffffffffff",
+        "after_hex": "07000000000000000000000000000000"
+      },
+      {
+        "base": "0x3C1C04C14000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "0000000007489dc0fffffffff8b7623f",
+        "after_hex": "0000000004c14140fffffffffb3ebebf"
+      },
+      {
+        "base": "0x3C1C03B8C000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "0000000003b8c900fffffffffc4736ff",
+        "after_hex": "0000000003b8ff00fffffffffc4700ff"
+      },
+      {
+        "base": "0x3C1C06AFC000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "3813ec81f67f00000100000004000000",
+        "after_hex": "3813ec81f67f0000010000000a000000"
+      },
+      {
+        "base": "0x3C1C06AA0000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "08a0aa061c3c0000004893061c3c0000",
+        "after_hex": "08a0aa061c3c0000004893061c3c0000"
+      },
+      {
+        "base": "0x3C1800210000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "700d020000000000000000001c3c0000",
+        "after_hex": "40ad020000000000000000001c3c0000"
+      },
+      {
+        "base": "0x3C1C00058000",
+        "protect": "RW",
+        "writer_pids": [
+          3872,
+          14248
+        ],
+        "before_hex": "e0b0ff81f67f00000100000000fa7a5f",
+        "after_hex": "e0b0ff81f67f00000100000000fa7a5f"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 276,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "tradingview.exe",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtQueryInformationThread"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "tradingview.exe",
+        "function": "NtWriteFile"
+      },
+      {
+        "module": "oleaut32.dll",
+        "function": "NtQuerySystemInformationEx"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 227,
+    "stubs": [
+      {
+        "address": "0x1F19A53B032",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1F19A53B035",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1F19A53B072",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      },
+      {
+        "address": "0x1F19A53B075",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RX",
+        "context_bytes": "03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00 00 00 00"
+      },
+      {
+        "address": "0x1F19A53B0B2",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RX",
+        "context_bytes": "7f 01 75 03 0f 05 c3 cd 2e c3 0f 1f 84 00 00 00"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 20,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 2,
+    "dangerous_access_count": 2,
+    "dangerous_handles": [
+      {
+        "owner_pid": 3872,
+        "owner_name": "TradingView.exe",
+        "rights": "ALL_ACCESS",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": true
+      },
+      {
+        "owner_pid": 14248,
+        "owner_name": "TradingView.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|CREATE_THREAD|SUSPEND_RESUME|DUP_HANDLE|QUERY_INFO|SET_INFO|0x3185",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 2,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 57,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 59,
+    "event_sequence": [
+      "virtual_alloc",
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.39,
+    "working_set_mb": 279.0,
+    "private_bytes_mb": 217.6,
+    "handle_count": 427,
+    "thread_count": 20,
+    "io_read_mb": 16.62,
+    "io_write_mb": 368.49
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 35,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "process": {
+    "name": "node.exe",
+    "pid": 16956,
+    "path": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VisualStudio\\NodeJs\\node.exe",
+    "integrity": "high",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeDebugPrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege"
+    ],
+    "module_count": 35,
+    "region_count": 1832
+  },
+  "modules": {
+    "total": 35,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 12,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 788,
+    "exec_protect_count": 12,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1EB19240000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.089,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1EB19250000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1EB19251000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 2.53,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x25880000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x25880040000",
+        "size_kb": 2560,
+        "protect": "RWX",
+        "entropy": 5.687,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x2589FDC0000",
+        "size_kb": 2072,
+        "protect": "RX",
+        "entropy": 5.633,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x258A0000000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x258A0040000",
+        "size_kb": 6400,
+        "protect": "RWX",
+        "entropy": 5.581,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x258BFDC0000",
+        "size_kb": 2072,
+        "protect": "RX",
+        "entropy": 5.633,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x258E2980000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 0.09,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f02cd5e8754000000",
+        "after_hex": "000000000000a00f3e64ac8754000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 267,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "crypt32.dll",
+        "function": "NtQuerySystemInformation"
+      },
+      {
+        "module": "crypt32.dll",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "crypt32.dll",
+        "function": "NtQueryInformationFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtCreateFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtQueryDirectoryFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 92,
+    "stubs": [
+      {
+        "address": "0x258800A57EF",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RWX",
+        "context_bytes": "00 00 00 e8 cd 2e d7 1f 48 89 45 b0 48 8b 55 b0"
+      },
+      {
+        "address": "0x2588010442F",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RWX",
+        "context_bytes": "fd ff ff e8 cd 2e d7 1f cc 48 89 85 28 ff ff ff"
+      },
+      {
+        "address": "0x2588019339A",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 00 03 07 0f 05 00 00 00 00 00 cc cc cc 00 00"
+      },
+      {
+        "address": "0x258801A4897",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "41 51 c3 e9 0f 05 00 00 e9 0e 05 00 00 ba 20 00"
+      },
+      {
+        "address": "0x258801C75DA",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "00 75 05 e9 0f 05 00 00 48 8b 55 18 48 b9 49 43"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 13,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 13,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 13,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 270.4,
+    "private_bytes_mb": 262.0,
+    "handle_count": 205,
+    "thread_count": 13,
+    "io_read_mb": 26.77,
+    "io_write_mb": 0.18
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 13,
+    "interesting_count": 1,
+    "interesting": [
+      {
+        "address": "0x1EB19251000",
+        "trigger": "virtualalloc: exec protect",
+        "flags": [
+          "CALL/JMP - possible shellcode trampoline"
+        ],
+        "first_32B": "e93b080000cccccce93d080000cccccce93f080000cccccce941080000cccccc"
+      }
+    ]
+  }
+}

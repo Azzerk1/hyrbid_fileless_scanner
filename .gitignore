@@ -1,0 +1,14 @@
+.vs/
+Debug/
+Release/
+x64/
+*.user
+*.suo
+*.pdb
+*.obj
+*.ilk
+*.exe
+*.dll
+__pycache__/
+*.pyc
+.env

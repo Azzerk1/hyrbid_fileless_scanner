@@ -1,0 +1,293 @@
+{
+  "process": {
+    "name": "PhoneExperienceHost.exe",
+    "pid": 27024,
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.25072.79.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 278,
+    "region_count": 3559
+  },
+  "modules": {
+    "total": 278,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 14,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 385,
+    "exec_protect_count": 14,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1D942F50000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.677,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF4955E1000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.094,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF4955F1000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 2.021,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495601000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 2.021,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495611000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495621000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.406,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495631000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.411,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495641000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495651000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.572,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7DF495661000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 2.591,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f3ea9206d54000000",
+        "after_hex": "000000000000a00f1d7b6e6d54000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 575,
+    "high_value_imports": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtProtectVirtualMemory"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryAttributesFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQueryObject"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "ZwOpenKey"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "apphelp.dll",
+        "function": "NtQuerySecurityObject"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 36,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 3,
+    "entries": [
+      {
+        "base": "0x21A24750000",
+        "size_kb": 552,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe\\Microsoft.ui.xaml.resources.19h1.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x219DC6B0000",
+        "size_kb": 1084,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe\\Microsoft.UI.Xaml.Phone.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x21A24C80000",
+        "size_kb": 52,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe\\Microsoft.ui.xaml.resources.common.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 2,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 1456,
+        "owner_name": "svchost.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|DUP_HANDLE|QUERY_INFO|0x1000",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": false,
+        "suspend_resume": false,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 181.7,
+    "private_bytes_mb": 110.6,
+    "handle_count": 1302,
+    "thread_count": 36,
+    "io_read_mb": 0.37,
+    "io_write_mb": 0.0
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 18,
+    "interesting_count": 3,
+    "interesting": [
+      {
+        "address": "0x21A24750000",
+        "trigger": "mapped module @ 0x21a24750000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x219DC6B0000",
+        "trigger": "mapped module @ 0x219dc6b0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x21A24C80000",
+        "trigger": "mapped module @ 0x21a24c80000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

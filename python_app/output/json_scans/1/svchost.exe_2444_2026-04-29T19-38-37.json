@@ -1,0 +1,190 @@
+{
+  "process": {
+    "name": "svchost.exe",
+    "pid": 2444,
+    "path": "C:\\Windows\\System32\\svchost.exe",
+    "integrity": "system",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeTcbPrivilege",
+      "SeIncreaseBasePriorityPrivilege",
+      "SeCreatePermanentPrivilege",
+      "SeDebugPrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege",
+      "SeIncreaseWorkingSetPrivilege"
+    ],
+    "module_count": 67,
+    "region_count": 1008
+  },
+  "modules": {
+    "total": 67,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 0,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 202,
+    "exec_protect_count": 0,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": []
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 43,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x23AB762B000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "580f55b73a02000000d02fb83a020000",
+        "after_hex": "580f55b73a02000000d02fb83a020000"
+      },
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f542922254e000000",
+        "after_hex": "000000000000a00f55fd6e254e000000"
+      },
+      {
+        "base": "0x23AB8AC4000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0090b7b83a020000d82555b73a020000",
+        "after_hex": "0030f8b73a0200000090b7b83a020000"
+      },
+      {
+        "base": "0x23AB829E000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "981f55b73a020000981f55b73a020000",
+        "after_hex": "981f55b73a020000981f55b73a020000"
+      },
+      {
+        "base": "0x23AB7766000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "581459b73a020000009079b73a020000",
+        "after_hex": "00e075b73a020000009079b73a020000"
+      },
+      {
+        "base": "0x23AB81D3000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00105cb83a020000003031b83a020000",
+        "after_hex": "00105cb83a020000d80c55b73a020000"
+      },
+      {
+        "base": "0x23AB7F6C000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00d02bb83a020000d86055b73a020000",
+        "after_hex": "003002b83a020000006061b73a020000"
+      },
+      {
+        "base": "0x23AB8023000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00502fb83a0200000010a8b83a020000",
+        "after_hex": "00d034b83a02000000c0f6b73a020000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 289,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "svchost.exe",
+        "function": "NtSetInformationProcess"
+      },
+      {
+        "module": "svchost.exe",
+        "function": "NtQuerySystemInformation"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 7,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 56,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 56,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 30.6,
+    "private_bytes_mb": 14.0,
+    "handle_count": 328,
+    "thread_count": 7,
+    "io_read_mb": 82.79,
+    "io_write_mb": 0.23
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 43,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

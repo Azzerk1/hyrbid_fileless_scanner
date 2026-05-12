@@ -1,0 +1,195 @@
+{
+  "process": {
+    "name": "msedgewebview2.exe",
+    "pid": 4640,
+    "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\147.0.3912.86\\msedgewebview2.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 124,
+    "region_count": 2708
+  },
+  "modules": {
+    "total": 124,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 0,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 651,
+    "exec_protect_count": 0,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": []
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 7,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f71bb94d553000000",
+        "after_hex": "000000000000a00fce79e2d553000000"
+      },
+      {
+        "base": "0x5D800234000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "100300000000000000000000dc050000",
+        "after_hex": "100300000000000000000000dc050000"
+      },
+      {
+        "base": "0x5D800218000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "40cc00000000000000000000dc050000",
+        "after_hex": "60cf00000000000000000000dc050000"
+      },
+      {
+        "base": "0x5DC0014C000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "800627f4f87f0000500727f4f87f0000",
+        "after_hex": "800627f4f87f0000500727f4f87f0000"
+      },
+      {
+        "base": "0x5DC00384000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "5ec08bf4f87f000078fb63f5f87f0000",
+        "after_hex": "5ec08bf4f87f00002e29ebf4f87f0000"
+      },
+      {
+        "base": "0x5DC00AB0000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "514cdcf4f87f00000e4cdcf4f87f0000",
+        "after_hex": "47e5a5f4f87f0000be3e96f5f87f0000"
+      },
+      {
+        "base": "0x5DC01B5C000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "1000000070000000e0d71e6208000000",
+        "after_hex": "10000000700000009ee62b6208000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 628,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "msedgewebview2.exe",
+        "function": "NtQueryInformationProcess"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtClose"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtCreateKey"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtDeleteKey"
+      },
+      {
+        "module": "msedge_elf.dll",
+        "function": "NtDeleteValueKey"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 56,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 852,
+        "owner_name": "lsass.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|DUP_HANDLE|QUERY_INFO|0x1000",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": false,
+        "suspend_resume": false,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 9,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 9,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 122.2,
+    "private_bytes_mb": 44.2,
+    "handle_count": 1319,
+    "thread_count": 56,
+    "io_read_mb": 17.2,
+    "io_write_mb": 9.53
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 7,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

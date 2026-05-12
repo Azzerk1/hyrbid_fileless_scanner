@@ -1,0 +1,175 @@
+{
+  "process": {
+    "name": "steamwebhelper.exe",
+    "pid": 27092,
+    "path": "E:\\Program Files\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 47,
+    "region_count": 958
+  },
+  "modules": {
+    "total": 47,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 1,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 215,
+    "exec_protect_count": 1,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x7FFA16DC0000",
+        "size_kb": 20,
+        "protect": "RWX",
+        "entropy": 0.055,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 1,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          26152
+        ],
+        "before_hex": "000000000000a00faca9c6c451000000",
+        "after_hex": "000000000000a00fb77d13c551000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 303,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "nlaapi.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 17,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 2,
+    "dangerous_access_count": 2,
+    "dangerous_handles": [
+      {
+        "owner_pid": 26152,
+        "owner_name": "steamwebhelper.exe",
+        "rights": "ALL_ACCESS",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": true
+      },
+      {
+        "owner_pid": 26476,
+        "owner_name": "steamwebhelper.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|CREATE_THREAD|SUSPEND_RESUME|DUP_HANDLE|QUERY_INFO|SET_INFO|0x3185",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": true,
+        "suspend_resume": true,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 4,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 4,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 31.4,
+    "private_bytes_mb": 12.3,
+    "handle_count": 325,
+    "thread_count": 15,
+    "io_read_mb": 7.15,
+    "io_write_mb": 17.59
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 2,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

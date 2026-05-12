@@ -1,0 +1,162 @@
+{
+  "process": {
+    "name": "python.exe",
+    "pid": 38228,
+    "path": "C:\\Users\\Jakub\\.conda\\envs\\memory_scanner_ml\\python.exe",
+    "integrity": "high",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeDebugPrivilege",
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege",
+      "SeCreateGlobalPrivilege"
+    ],
+    "module_count": 318,
+    "region_count": 3156
+  },
+  "modules": {
+    "total": 318,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 1,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 494,
+    "exec_protect_count": 1,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x29D6D1B0000",
+        "size_kb": 64,
+        "protect": "RWX",
+        "entropy": 0.029,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 2,
+    "with_confirmed_writer_pid": 2,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [
+          1456
+        ],
+        "before_hex": "000000000000a00fe24804a354000000",
+        "after_hex": "000000000000a00f5d2e52a354000000"
+      },
+      {
+        "base": "0x29D42570000",
+        "protect": "RW",
+        "writer_pids": [
+          1456
+        ],
+        "before_hex": "0000000000000000d0cd5b429d020000",
+        "after_hex": "0000000000000000d0cd5b429d020000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 451,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "ws2_32.dll",
+        "function": "NtCreateFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtQueryDirectoryFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtWaitForSingleObject"
+      },
+      {
+        "module": "ws2_32.dll",
+        "function": "NtFsControlFile"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 21,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 7,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 7,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 429.9,
+    "private_bytes_mb": 862.6,
+    "handle_count": 697,
+    "thread_count": 21,
+    "io_read_mb": 74.0,
+    "io_write_mb": 2.29
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 3,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

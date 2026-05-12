@@ -1,0 +1,353 @@
+{
+  "process": {
+    "name": "XboxPcApp.exe",
+    "pid": 33768,
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2603.1001.18.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+    "integrity": "low",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 195,
+    "region_count": 2560
+  },
+  "modules": {
+    "total": 195,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 1,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 438,
+    "exec_protect_count": 1,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x7DF4588E1000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 3.084,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 16,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f9c61346e52000000",
+        "after_hex": "000000000000a00fee1f826e52000000"
+      },
+      {
+        "base": "0x264A117F000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d80ce38d630200000010eda064020000",
+        "after_hex": "d80ce38d630200000010eda064020000"
+      },
+      {
+        "base": "0x264A0DF0000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "980be38d6302000000c066dd63020000",
+        "after_hex": "980be38d6302000000c066dd63020000"
+      },
+      {
+        "base": "0x264A1524000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "a847e38d6302000000e0dfa064020000",
+        "after_hex": "a847e38d6302000000e0dfa064020000"
+      },
+      {
+        "base": "0x264A1F13000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "1818e38d63020000002010a164020000",
+        "after_hex": "1818e38d63020000002010a164020000"
+      },
+      {
+        "base": "0x264A1123000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "1813e38d630200001813e38d63020000",
+        "after_hex": "1813e38d630200001813e38d63020000"
+      },
+      {
+        "base": "0x263DCA23000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "005046a06402000000e0339063020000",
+        "after_hex": "00e033906302000000001aa164020000"
+      },
+      {
+        "base": "0x263DD770000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "180ef48d6302000000b074dd63020000",
+        "after_hex": "180ef48d6302000000b074dd63020000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 651,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "gdi32full.dll",
+        "function": "NtQueryInformationFile"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtOpenFile"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtUnmapViewOfSection"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtCreateSection"
+      },
+      {
+        "module": "gdi32full.dll",
+        "function": "NtMapViewOfSection"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 28,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 12,
+    "entries": [
+      {
+        "base": "0x26390850000",
+        "size_kb": 48,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.GamingApp_2603.1001.18.0_x64__8wekyb3d8bbwe\\XboxPcAppFT.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x26392330000",
+        "size_kb": 700,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Resources.19h1.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x26390B60000",
+        "size_kb": 68,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.Foundation.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x26390860000",
+        "size_kb": 16,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.GamingApp_2603.1001.18.0_x64__8wekyb3d8bbwe\\Microsoft.Gaming.XboxApp.Extensions.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x26390B80000",
+        "size_kb": 8,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\Microsoft.GamingApp_2603.1001.18.0_x64__8wekyb3d8bbwe\\XboxLib.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x26392950000",
+        "size_kb": 656,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.UI.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x263DCC00000",
+        "size_kb": 1268,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Phone.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x263DCD40000",
+        "size_kb": 1352,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Maps.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x263DCEA0000",
+        "size_kb": 972,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.InkControls.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x263DCFA0000",
+        "size_kb": 3952,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\Windows.UI.Xaml.Controls.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 4,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 11,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 11,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 215.6,
+    "private_bytes_mb": 187.2,
+    "handle_count": 1502,
+    "thread_count": 28,
+    "io_read_mb": 29.59,
+    "io_write_mb": 33.51
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 29,
+    "interesting_count": 12,
+    "interesting": [
+      {
+        "address": "0x26390850000",
+        "trigger": "mapped module @ 0x26390850000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x26392330000",
+        "trigger": "mapped module @ 0x26392330000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x26390B60000",
+        "trigger": "mapped module @ 0x26390b60000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x26390860000",
+        "trigger": "mapped module @ 0x26390860000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x26390B80000",
+        "trigger": "mapped module @ 0x26390b80000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x26392950000",
+        "trigger": "mapped module @ 0x26392950000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x263DCC00000",
+        "trigger": "mapped module @ 0x263dcc00000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x263DCD40000",
+        "trigger": "mapped module @ 0x263dcd40000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

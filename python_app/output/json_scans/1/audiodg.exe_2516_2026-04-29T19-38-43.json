@@ -1,0 +1,149 @@
+{
+  "process": {
+    "name": "audiodg.exe",
+    "pid": 2516,
+    "path": "C:\\Windows\\System32\\audiodg.exe",
+    "integrity": "system",
+    "elevated": true,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege",
+      "SeImpersonatePrivilege"
+    ],
+    "module_count": 40,
+    "region_count": 532
+  },
+  "modules": {
+    "total": 40,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 0,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 70,
+    "exec_protect_count": 0,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": []
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 3,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f9b8a1b294e000000",
+        "after_hex": "000000000000a00ffa2368294e000000"
+      },
+      {
+        "base": "0x255ED1D0000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "f2d9fff2d9ff0bdcff0bdcfff0ddfff0",
+        "after_hex": "d4ecffd4ecffcbecffcbecff96ebff96"
+      },
+      {
+        "base": "0x255ED1D6000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "f2d9fff2d9ff0bdcff0bdcfff0ddfff0",
+        "after_hex": "d4ecffd4ecffcbecffcbecff96ebff96"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 271,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "audiodg.exe",
+        "function": "NtAlpcCreatePort"
+      },
+      {
+        "module": "audiodg.exe",
+        "function": "NtSetInformationProcess"
+      },
+      {
+        "module": "audiodg.exe",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "audiodg.exe",
+        "function": "NtSetSystemInformation"
+      },
+      {
+        "module": "audiodg.exe",
+        "function": "NtQuerySystemInformation"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 9,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 0,
+    "entries": []
+  },
+  "handles": {
+    "external_handles_total": 1,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 12,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 12,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.2,
+    "working_set_mb": 16.6,
+    "private_bytes_mb": 10.0,
+    "handle_count": 330,
+    "thread_count": 9,
+    "io_read_mb": 0.0,
+    "io_write_mb": 0.0
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 3,
+    "interesting_count": 0,
+    "interesting": []
+  }
+}

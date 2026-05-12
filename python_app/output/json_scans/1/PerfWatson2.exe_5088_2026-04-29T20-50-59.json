@@ -1,0 +1,385 @@
+{
+  "process": {
+    "name": "PerfWatson2.exe",
+    "pid": 5088,
+    "path": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PerfWatson2.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 121,
+    "region_count": 1951
+  },
+  "modules": {
+    "total": 121,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 20,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 174,
+    "exec_protect_count": 20,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x242E45F0000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 2.935,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x242E46F0000",
+        "size_kb": 8,
+        "protect": "RWX",
+        "entropy": 0.609,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF4EE470000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.42,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF4EE480000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.164,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FF4EE490000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.155,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFE6F9B3000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 1.481,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFE6F9BD000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 4.767,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFE6F9CD000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 3.288,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFE6F9DB000",
+        "size_kb": 48,
+        "protect": "RWX",
+        "entropy": 3.521,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x7FFE6FA0C000",
+        "size_kb": 80,
+        "protect": "RWX",
+        "entropy": 4.984,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 1,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f2b38511e03000000",
+        "after_hex": "000000000000a00fc58d9f1e03000000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 409,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 0,
+    "stubs": [],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 18,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 11,
+    "entries": [
+      {
+        "base": "0x242E44A0000",
+        "size_kb": 24,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\SharedAssemblies\\System.Buffers\\4.0.5.0\\4.6.1\\netfx\\System.Buffers.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2B40000",
+        "size_kb": 20,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\DiagnosticsHub.Packaging.Interop.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2AC0000",
+        "size_kb": 204,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Microsoft.VisualStudio.RegDetour.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2B10000",
+        "size_kb": 20,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\DiagnosticsHub.StandardCollector.Host.Interop.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2B20000",
+        "size_kb": 48,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\Microsoft.DiagnosticsHub.Packaging.InteropEx.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2B50000",
+        "size_kb": 20,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\TraceReloggerLib.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242FCFD0000",
+        "size_kb": 492,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\OpenTelemetry\\Core\\Microsoft.VisualStudio.OpenTelemetry.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E2B70000",
+        "size_kb": 76,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\Microsoft.Diagnostics.FastSerialization.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E4510000",
+        "size_kb": 108,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\SharedAssemblies\\System.Numerics.Vectors\\4.1.6.0\\4.6.1\\netfx\\System.Numerics.Vectors.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x242E4540000",
+        "size_kb": 220,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PublicAssemblies\\System.Diagnostics.DiagnosticSource.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 0,
+    "dangerous_access_count": 0,
+    "dangerous_handles": []
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 5,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 5,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.0,
+    "working_set_mb": 78.5,
+    "private_bytes_mb": 52.7,
+    "handle_count": 836,
+    "thread_count": 18,
+    "io_read_mb": 1.21,
+    "io_write_mb": 0.88
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 32,
+    "interesting_count": 11,
+    "interesting": [
+      {
+        "address": "0x242E44A0000",
+        "trigger": "mapped module @ 0x242e44a0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2B40000",
+        "trigger": "mapped module @ 0x242e2b40000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2AC0000",
+        "trigger": "mapped module @ 0x242e2ac0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2B10000",
+        "trigger": "mapped module @ 0x242e2b10000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2B20000",
+        "trigger": "mapped module @ 0x242e2b20000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2B50000",
+        "trigger": "mapped module @ 0x242e2b50000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242FCFD0000",
+        "trigger": "mapped module @ 0x242fcfd0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x242E2B70000",
+        "trigger": "mapped module @ 0x242e2b70000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

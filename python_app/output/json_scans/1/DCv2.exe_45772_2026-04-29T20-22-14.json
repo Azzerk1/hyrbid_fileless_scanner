@@ -1,0 +1,476 @@
+{
+  "process": {
+    "name": "DCv2.exe",
+    "pid": 45772,
+    "path": "C:\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\DCv2.exe",
+    "integrity": "medium",
+    "elevated": false,
+    "enabled_privileges": [
+      "SeChangeNotifyPrivilege"
+    ],
+    "module_count": 190,
+    "region_count": 3680
+  },
+  "modules": {
+    "total": 190,
+    "non_file_backed_count": 0,
+    "non_file_backed": []
+  },
+  "memory_regions": {
+    "exec_private_count": 37,
+    "mz_header_in_private_count": 0,
+    "high_entropy_exec_count": 0,
+    "top_high_entropy_exec": []
+  },
+  "virtual_allocs": {
+    "total_private_committed": 426,
+    "exec_protect_count": 37,
+    "mz_or_pe_count": 0,
+    "suspicious_entries": [
+      {
+        "base": "0x1972E7B0000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 0.683,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x19748A70000",
+        "size_kb": 4,
+        "protect": "RWX",
+        "entropy": 1.152,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x19748D00000",
+        "size_kb": 36,
+        "protect": "RWX",
+        "entropy": 0.269,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x19748D13000",
+        "size_kb": 12,
+        "protect": "RWX",
+        "entropy": 4.018,
+        "entropy_label": "medium",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974AD50000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.219,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974B550000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.219,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974B9C0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.28,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974B9D0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.28,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974B9E0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.279,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      },
+      {
+        "base": "0x1974B9F0000",
+        "size_kb": 4,
+        "protect": "RX",
+        "entropy": 1.28,
+        "entropy_label": "low",
+        "has_mz": false,
+        "has_pe": false
+      }
+    ]
+  },
+  "protect_changes": {
+    "total": 0,
+    "gained_exec_count": 0,
+    "lost_write_count": 0,
+    "gained_exec_details": []
+  },
+  "write_events": {
+    "changed_regions_count": 25,
+    "with_confirmed_writer_pid": 0,
+    "events": [
+      {
+        "base": "0x7FFE0000",
+        "protect": "R",
+        "writer_pids": [],
+        "before_hex": "000000000000a00f034de83c54000000",
+        "after_hex": "000000000000a00f600b363d54000000"
+      },
+      {
+        "base": "0x1974AA45000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "002010509701000000d0315497010000",
+        "after_hex": "58235f2e9701000000d0315497010000"
+      },
+      {
+        "base": "0x1974AA83000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "0050e94a9701000000005b5697010000",
+        "after_hex": "0050e94a97010000d8165f2e97010000"
+      },
+      {
+        "base": "0x1974AAAC000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00300450970100000090812e97010000",
+        "after_hex": "0090812e9701000000e0634b97010000"
+      },
+      {
+        "base": "0x1974AAEB000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "d80c5f2e9701000000f0aa4a97010000",
+        "after_hex": "00d0aa4a9701000000f0aa4a97010000"
+      },
+      {
+        "base": "0x1974AB13000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "18095f2e9701000000b00d5d97010000",
+        "after_hex": "00a0ad4a9701000000b00d5d97010000"
+      },
+      {
+        "base": "0x1974AE50000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "00e0095d9701000000406d4b97010000",
+        "after_hex": "00406d4b970100000040375497010000"
+      },
+      {
+        "base": "0x1974B613000",
+        "protect": "RW",
+        "writer_pids": [],
+        "before_hex": "182c5f2e9701000000c0365497010000",
+        "after_hex": "182c5f2e9701000000c0365497010000"
+      }
+    ]
+  },
+  "nt_syscall": {
+    "direct_nt_imports_total": 685,
+    "high_value_imports": [
+      {
+        "module": "sechost.dll",
+        "function": "NtQueueApcThread"
+      },
+      {
+        "module": "mswsock.dll",
+        "function": "NtQueueApcThread"
+      }
+    ],
+    "other_nt_imports_sample": [
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenProcessTokenEx"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtOpenKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryValueKey"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtSetInformationThread"
+      },
+      {
+        "module": "sechost.dll",
+        "function": "NtQueryInformationThread"
+      }
+    ],
+    "syscall_stubs_in_private_exec": 19,
+    "stubs": [
+      {
+        "address": "0x7FF995F60B7E",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "da 78 5f 5e 0f 05 e8 3b da 78 5f 5e 10 04 e8 33"
+      },
+      {
+        "address": "0x7FF9961B09EE",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "db 53 5f 5e 0f 05 e8 cb db 53 5f 5e 11 04 e8 c3"
+      },
+      {
+        "address": "0x7FF9961C3C02",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "41 08 0f 83 0f 05 00 00 48 63 c0 0f b7 6c 41 10"
+      },
+      {
+        "address": "0x7FF9961DC3DC",
+        "opcode": "SYSCALL (0F 05)",
+        "protect": "RWX",
+        "context_bytes": "24 00 00 00 0f 05 00 00 9d 00 00 00 d0 00 00 00"
+      },
+      {
+        "address": "0x7FF9961E716F",
+        "opcode": "INT 2Eh (CD 2E)",
+        "protect": "RWX",
+        "context_bytes": "fc ff 90 e8 cd 2e 9d 5c 48 89 85 18 ff ff ff 48"
+      }
+    ],
+    "ntdll_exports_checked": 4,
+    "ntdll_hooks_found": 0,
+    "hooks": []
+  },
+  "threads": {
+    "total": 22,
+    "starting_in_private_exec": 0,
+    "private_exec_threads": []
+  },
+  "remote_threads": {
+    "new_threads_observed": 0,
+    "from_external_process": 0,
+    "details": []
+  },
+  "mapped_modules": {
+    "anomalous_image_regions": 66,
+    "entries": [
+      {
+        "base": "0x19754550000",
+        "size_kb": 688,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\Newtonsoft.Json.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1974B800000",
+        "size_kb": 1020,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\UC_Monitor.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x19748AE0000",
+        "size_kb": 68,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.Foundation.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x19748B20000",
+        "size_kb": 24,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\Microsoft.NET\\assembly\\GAC_MSIL\\System.Runtime\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Runtime.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1975AA60000",
+        "size_kb": 3112,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\UC_M-VISION DASHBOARD.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x19748BC0000",
+        "size_kb": 144,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\Microsoft.NET\\assembly\\GAC_MSIL\\System.Runtime.WindowsRuntime\\v4.0_4.0.0.0__b77a5c561934e089\\System.Runtime.WindowsRuntime.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1974B5C0000",
+        "size_kb": 168,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\UC_Graphics Fan Tool.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1974B1C0000",
+        "size_kb": 68,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\MonitorControlLibrary_MyDevice.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x19748ED0000",
+        "size_kb": 156,
+        "path": "\\Device\\HarddiskVolume1\\Windows\\System32\\WinMetadata\\Windows.System.winmd",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      },
+      {
+        "base": "0x1974BA40000",
+        "size_kb": 464,
+        "path": "\\Device\\HarddiskVolume1\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.68.0_x64__kzh8wxbdkxb8p\\DCv2\\UC_Gaming Mode.dll",
+        "has_mz": true,
+        "missing_win32": true,
+        "missing_peb_ldr": true,
+        "no_file_backing": false
+      }
+    ]
+  },
+  "handles": {
+    "external_handles_total": 3,
+    "dangerous_access_count": 1,
+    "dangerous_handles": [
+      {
+        "owner_pid": 852,
+        "owner_name": "lsass.exe",
+        "rights": "VM_WRITE|VM_READ|VM_OPERATION|DUP_HANDLE|QUERY_INFO|0x1000",
+        "vm_write": true,
+        "vm_read": true,
+        "create_thread": false,
+        "suspend_resume": false,
+        "all_access": false
+      }
+    ]
+  },
+  "api_activity": {
+    "observation_window_ms": 1000,
+    "inferred_calls": {
+      "VirtualAllocEx": 0,
+      "VirtualProtect": 0,
+      "VirtualProtect_exec": 0,
+      "WriteProcessMemory": 58,
+      "CreateRemoteThread": 0
+    },
+    "total_events": 58,
+    "event_sequence": [
+      "write_memory"
+    ],
+    "note": "event_sequence shows DISTINCT event types in first-seen order. alloc->write->protect_exec->create_thread is the classic injection chain."
+  },
+  "performance": {
+    "cpu_percent": 0.39,
+    "working_set_mb": 148.2,
+    "private_bytes_mb": 194.9,
+    "handle_count": 1015,
+    "thread_count": 23,
+    "io_read_mb": 13.48,
+    "io_write_mb": 0.64
+  },
+  "memory_sample_highlights": {
+    "total_samples_captured": 111,
+    "interesting_count": 66,
+    "interesting": [
+      {
+        "address": "0x19754550000",
+        "trigger": "mapped module @ 0x19754550000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1974B800000",
+        "trigger": "mapped module @ 0x1974b800000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x19748AE0000",
+        "trigger": "mapped module @ 0x19748ae0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a000000000000000000000000000000000000000000004000000000000000"
+      },
+      {
+        "address": "0x19748B20000",
+        "trigger": "mapped module @ 0x19748b20000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1975AA60000",
+        "trigger": "mapped module @ 0x1975aa60000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x19748BC0000",
+        "trigger": "mapped module @ 0x19748bc0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1974B5C0000",
+        "trigger": "mapped module @ 0x1974b5c0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      },
+      {
+        "address": "0x1974B1C0000",
+        "trigger": "mapped module @ 0x1974b1c0000: !Win32List, !PEB-LDR",
+        "flags": [
+          "MZ_HEADER - PE image embedded in process memory"
+        ],
+        "first_32B": "4d5a90000300000004000000ffff0000b8000000000000004000000000000000"
+      }
+    ]
+  }
+}

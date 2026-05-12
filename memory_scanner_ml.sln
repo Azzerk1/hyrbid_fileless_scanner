@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_app", "python_app\python_app.pyproj", "{49FF3699-18F0-468D-8503-9F0232C4FF4E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memory_scanner", "memory_scanner\memory_scanner.vcxproj", "{60035867-47CA-4B36-8C4E-A959ECD88F38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Release|x64.ActiveCfg = Release|Any CPU
+		{49FF3699-18F0-468D-8503-9F0232C4FF4E}.Release|x86.ActiveCfg = Release|Any CPU
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|Any CPU.Build.0 = Debug|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|x64.ActiveCfg = Debug|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|x64.Build.0 = Debug|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|x86.ActiveCfg = Debug|Win32
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Debug|x86.Build.0 = Debug|Win32
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|Any CPU.ActiveCfg = Release|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|Any CPU.Build.0 = Release|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|x64.ActiveCfg = Release|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|x64.Build.0 = Release|x64
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|x86.ActiveCfg = Release|Win32
+		{60035867-47CA-4B36-8C4E-A959ECD88F38}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6B40FF1-2357-4D87-A80D-36C9EF038FFD}
+	EndGlobalSection
+EndGlobal

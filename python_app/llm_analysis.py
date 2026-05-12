@@ -864,6 +864,291 @@ def build_analysis_prompt(bundle: ScanBundle) -> str:
           "Provide your malware analysis assessment."
     )
 
+_TIER_ORDER = ["Normal", "Suspicious", "Likely malicious", "Highly malicious"] # severity ranks
+ 
+ 
+# function which takes a number and turns it into a human readable severity case
+
+def _tier_index(label):
+
+    """Return the severity rank of a verdict label (0 = Normal, 3 = Highly)."""
+
+    if label in _TIER_ORDER:
+
+        return _TIER_ORDER.index(label)
+
+    # anything unrecognised is treated as Normal to avoid spurious escalation
+
+    return 0
+
+# function which takes a suspicion score from the IF and rule engine
+# and turns it into an overall suspicion score
+
+# rule engine is the biggest factor, the IF is the booster
+ 
+def _suspicion_score_from(rule_confidence, if_verdict):
+
+    """
+    Map (rule_confidence, IF verdict) to an integer 0-10 suspicion score
+    that aligns with the same score bands the LLM uses:
+
+        0-2  -> Normal
+        2-5  -> Suspicious
+        5-8  -> Likely malicious
+        8-10 -> Highly malicious
+ 
+    Rule confidence is the primary signal (already a 0-1 weighted score),
+    multiplied by 10 to get a base.  The IF verdict adds a small bump
+    when it escalates above the rule verdict.
+    """
+
+    base = int(round(rule_confidence * 10))
+
+    # boost by IF severity so the score reflects both layers
+
+    if_bump = _tier_index(if_verdict)   # 0..3
+
+    return min(10, base + (if_bump // 2))   # max +1 from IF, capped at 10
+ 
+# predefined outcomes for recommended actions label
+# these actions are ficed and are choosen based on the final verdict
+ 
+def _recommended_actions_for(tier_label):
+
+    """Three concrete actions per verdict tier — deterministic, no LLM."""
+
+    if tier_label == "Highly malicious":
+
+        return [
+
+            "Isolate the affected host from the network immediately to prevent "
+            "lateral movement.",
+            "Capture a full memory dump of the suspect process for offline "
+            "forensic analysis before any cleanup.",
+            "Escalate to incident response and preserve scan evidence (CSV / "
+            "JSON exports) for chain-of-custody.",
+        ]
+
+    if tier_label == "Likely malicious":
+
+        return [
+
+            "Treat the host as suspect: restrict outbound network access and "
+            "monitor for further indicators.",
+            "Acquire a memory snapshot of the process and any child processes "
+            "it has spawned during the observation window.",
+            "Re-scan the process after 30 seconds to confirm the indicators "
+            "persist rather than being a transient artefact.",
+        ]
+
+    if tier_label == "Suspicious":
+
+        return [
+
+            "Re-scan the process to confirm whether the indicators persist or "
+            "were transient.",
+            "Cross-check the process path and signature against known-good "
+            "binaries on this host.",
+            "Capture a JSON export of the current scan for later comparison "
+            "if behaviour evolves.",
+        ]
+
+    return [
+
+        "No immediate action required.",
+        "Continue routine scanning of the process during the current "
+        "monitoring window.",
+        "Retain the scan output in the standard log if a baseline of normal "
+        "behaviour is being collected.",
+    ]
+ 
+# function which puts everything together and builds the fallback report
+ 
+def build_fallback_analysis(bundle): # takes full scan bundle
+
+    """
+    Build a complete five section analysis from the deterministic detector
+    layers, formatted identically to the LLM's output so the GUI can render
+    it without any special-case handling.
+ 
+    Returns a multi-line string ready to be streamed to the console.
+ 
+    Combination logic
+    -----------------
+    - rule verdict ∈ {Highly malicious, Likely malicious} → keep rule verdict
+    - rule verdict == Normal AND IF verdict == Normal → Normal
+    - rule and IF disagree → escalate to higher tier and say so
+    """
+
+    # --- pull what there is from the bundle -----
+
+    rule = getattr(bundle, "rule_result", None)
+    if_r = getattr(bundle, "if_result", None)
+ 
+    # defaults so the fallback never crashes even if a layer didnt run
+
+    # try / expect prevents crashes if data is missing
+
+    if rule is not None:
+
+        rule_verdict = getattr(rule, "label", "Normal")
+        rule_confidence = getattr(rule, "confidence", 0.0)
+
+        try:
+
+            fired = [h for h in rule.hits if h.triggered]
+
+        except Exception:
+
+            fired = []
+    else:
+
+        rule_verdict = "Normal"
+        rule_confidence = 0.0
+        fired = []
+ 
+    if if_r is not None:
+
+        if_verdict = if_r.get("verdict", "Normal")
+        if_score   = if_r.get("score", 0.0)
+
+    else:
+
+        if_verdict = "Normal"
+        if_score = 0.0
+
+    # --- resolve the combined verdict per spec into a number ------------------------------------------------------
+
+    rule_idx = _tier_index(rule_verdict)
+    if_idx = _tier_index(if_verdict)
+    disagree = (rule_idx != if_idx)
+ 
+    # spec rule 1: strong rule signal must never collapse to Normal
+    # spec rule 2: both normal -> Normal
+    # spec rule 3: disagreement -> take the higher tier
+
+    final_idx = max(rule_idx, if_idx)
+    final_verdict = _TIER_ORDER[final_idx]
+ 
+    # --- suspicion score 0 to 10 ---
+
+    score = _suspicion_score_from(rule_confidence, if_verdict)
+ 
+    # --- KEY INDICATORS ---------------
+
+    indicator_lines = []
+
+    # order fired rules by weight desc so the strongest signals appear first
+
+    fired_sorted = sorted(fired, key = lambda h: -getattr(h, "weight", 0))
+
+    for hit in fired_sorted[:10]: # max 10
+
+        rid = getattr(hit, "rule_id", "R??")
+        name = getattr(hit, "name",    "rule")
+        detail = getattr(hit, "detail",  "").replace("\n", " ").strip()
+
+        if detail:
+
+            indicator_lines.append(f"- {rid} {name}: {detail}")
+
+            # - R03 Private executable memory: RWX MEM_PRIVATE region found for example
+
+        else:
+
+            indicator_lines.append(f"- {rid} {name}")
+
+    # add the IF observation as its own indicator so it always shows up
+
+    indicator_lines.append(
+
+        f"- Isolation Forest: {if_verdict.lower()} "
+        f"(anomaly score {if_score:+.4f})"
+    )
+
+    if not fired:
+        indicator_lines.insert(
+            0,
+            "- No rule engine indicators triggered."
+        )
+ 
+    # --- ANALYSIS paragraph deterministic template -------------------
+
+    strongest = fired_sorted[0] if fired_sorted else None
+
+    strongest_line = (
+
+        f"The strongest rule indicator is "
+        f"{getattr(strongest, 'rule_id', '?')} "
+        f"({getattr(strongest, 'name', '?')}), "
+        f"contributing {getattr(strongest, 'weight', 0)} points to a total "
+        f"rule confidence of {rule_confidence * 100:.1f}%."
+
+        if strongest else
+
+        "No rule engine indicators were triggered for this process."
+    )
+
+    if disagree:
+
+        agreement_line = (
+
+            f"The rule engine and Isolation Forest DISAGREE on this scan: "
+            f"rule engine reports {rule_verdict.upper()} while the Isolation "
+            f"Forest reports {if_verdict.upper()}.  The fallback has "
+            f"escalated to the higher tier ({final_verdict}) so the stronger "
+            f"signal is not lost; the LLM would normally reconcile this with "
+            f"context, but is unavailable here."
+        )
+
+    else:
+
+        agreement_line = (
+
+            f"The rule engine and Isolation Forest agree on this scan: both "
+            f"report {final_verdict.upper()}, increasing confidence in the "
+            f"deterministic verdict."
+        )
+ 
+    analysis = (
+
+        f"{strongest_line}  {agreement_line}  This output was generated by "
+        f"the local fallback because the LLM reasoning layer could not be "
+        f"reached; the verdict is therefore based only on the deterministic "
+        f"rule engine and Isolation Forest layers, without the contextual "
+        f"reconciliation the LLM normally provides."
+    )
+ 
+    # --- RECOMMENDED ACTIONS ---------------------------------------------
+
+    actions = _recommended_actions_for(final_verdict)
+
+    action_lines = "\n".join(f"{i + 1}. {a}" for i, a in enumerate(actions))
+ 
+    # --- Assemble the five section output ---------------------------------
+
+    # same headers the SYSTEM_PROMPT asks the LLM to use
+    # this is exactly the same as the structure using the real API call when working
+
+    out = (
+
+        "[LOCAL FALLBACK — LLM API unreachable; verdict derived from rule "
+        "engine and Isolation Forest only]\n\n"
+        "## SUSPICION SCORE\n"
+        f"{score}\n\n"
+        "## KEY INDICATORS\n"
+        + "\n".join(indicator_lines)
+        + "\n\n"
+        "## ANALYSIS\n"
+        f"{analysis}\n\n"
+        "## VERDICT\n"
+        f"{final_verdict}\n\n"
+        "## RECOMMENDED ACTIONS\n"
+        f"{action_lines}\n"
+    )
+
+    return out
+
 # RESULT:
 
 #=== RULE ENGINE PRE-ASSESSMENT ===    ← rule engine verdict first
@@ -930,12 +1215,12 @@ class LLMAnalysisWorker(QThread):
 
         if not _ANTHROPIC_AVAILABLE:
 
-            self.error.emit(
-                "anthropic package not installed.\n"
-                "Run:  pip install anthropic\n"
-                "Then set ANTHROPIC_API_KEY in your environment."
-            )
+            self._emit_fallback(
 
+                reason = ("anthropic package not installed.  Run "
+                          "`pip install anthropic` and set "
+                          "ANTHROPIC_API_KEY to enable LLM analysis.")
+            )
             return
 
         try:
@@ -943,7 +1228,7 @@ class LLMAnalysisWorker(QThread):
             # reads the api client from windows environment variable control
             # then build the entire prompt from bundle running all the other functions
 
-            client = anthropic.Anthropic()   # reads ANTHROPIC_API_KEY from env
+            client = anthropic.Anthropic() # reads ANTHROPIC_API_KEY from env
             prompt = build_analysis_prompt(self.bundle)
 
             # open streaming connection to the api
@@ -960,13 +1245,44 @@ class LLMAnalysisWorker(QThread):
             ) as stream:
 
                 for text in stream.text_stream:
-
                     self.chunk.emit(text)
+ 
+            self.done.emit()
+ 
+        except Exception as exc:
 
-            # once streaming is done, call it done
+            # any api error passes through here
+            # emits the fallback method instead of an error
 
+            self._emit_fallback(
+
+                reason = f"{type(exc).__name__}: {exc}"
+            )
+ 
+    def _emit_fallback(self, reason):
+
+        """
+        Build the local fallback analysis from the rule and IF results
+        attached to the bundle.
+        """
+
+        try:
+
+            text = build_fallback_analysis(self.bundle)
+
+            # prefix with the actual reason so the user can see WHY the fallback ran
+            # for example, it will say when a key is invalid which is useful for debugging
+
+            self.chunk.emit(f"[Reason for fallback: {reason}]\n\n")
+            self.chunk.emit(text)
             self.done.emit()
 
         except Exception as exc:
 
-            self.error.emit(f"{type(exc).__name__}: {exc}")
+            # if even the fallback fails, fall back to the original error path
+
+            self.error.emit(
+
+                f"Fallback builder failed: {type(exc).__name__}: {exc}\n"
+                f"Original error: {reason}"
+            )

@@ -5145,11 +5145,13 @@ class MainWindow(QMainWindow):
 
         try:
 
-            d = self._last_verify_dataself.verify_panel.update_visualisations(
+            d = self._last_verify_data
 
-                scores  = d["scores"],
-                labels  = d["labels"],
-                preds   = d["preds"],
+            self.verify_panel.update_visualisations(
+
+                scores = d["scores"],
+                labels = d["labels"],
+                preds = d["preds"],
                 df_feat = d["df_feat"],
             )
 
